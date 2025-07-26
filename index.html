@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorin Ahmed | Software Engineer</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
+            font-family: 'Poppins', sans-serif;
+            background: url('https://images.unsplash.com/photo-1517511620798-cec17d428bc0?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+            background-size: cover;
             color: #333;
             display: flex;
             flex-direction: column;
@@ -16,52 +19,79 @@
             justify-content: center;
             min-height: 100vh;
             text-align: center;
+            padding: 20px;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(255, 255, 255, 0.7);
+            z-index: -1;
         }
         header {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin: 0;
+            color: #6c63ff;
         }
         p {
-            font-size: 1.1rem;
-            color: #555;
+            font-size: 1.2rem;
+            color: #444;
+            margin-top: 5px;
         }
         .links a {
-            margin: 0 10px;
+            margin: 0 12px;
             text-decoration: none;
-            color: #0073e6;
-            font-weight: bold;
+            color: #ff6f91;
+            font-weight: 600;
+            padding: 6px 12px;
+            border: 2px solid #ff6f91;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            background: rgba(255,255,255,0.6);
         }
         .links a:hover {
-            text-decoration: underline;
+            background-color: #ff6f91;
+            color: #fff;
         }
         .projects {
-            margin-top: 30px;
+            margin-top: 40px;
             display: grid;
             gap: 20px;
-            max-width: 600px;
+            max-width: 700px;
         }
         .project-card {
-            background: #fff;
+            background: rgba(255, 255, 255, 0.9);
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
         }
         .project-card h3 {
             margin-top: 0;
+            color: #6c63ff;
+        }
+        .project-card a {
+            text-decoration: none;
+            color: #ff6f91;
+            font-weight: 600;
         }
         footer {
-            margin-top: 40px;
+            margin-top: 50px;
             font-size: 0.9rem;
-            color: #777;
+            color: #666;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Lorin Ahmed</h1>
+        <h1>Hi, I’m Lorin Ahmed! ✨</h1>
         <p>Senior Software Engineer | Backend & AI Enthusiast</p>
         <div class="links">
             <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
@@ -74,22 +104,22 @@
         <div class="project-card">
             <h3>Journey Genie</h3>
             <p>An AI-based audio tour app that narrates stories about places as you travel.</p>
-            <a href="#">View Project</a>
+            <a href="#">View Project →</a>
         </div>
         <div class="project-card">
             <h3>WorldComics.org</h3>
             <p>A collaborative AI image-based comics platform.</p>
-            <a href="#">View Project</a>
+            <a href="#">View Project →</a>
         </div>
         <div class="project-card">
             <h3>AI Command-Line Helper</h3>
             <p>A tool that executes terminal commands based on natural language instructions.</p>
-            <a href="#">View Project</a>
+            <a href="#">View Project →</a>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Lorin Ahmed. All rights reserved.</p>
+        <p>Made with ❤️ by Lorin Ahmed</p>
     </footer>
 </body>
 </html>
